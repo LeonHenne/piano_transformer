@@ -34,13 +34,13 @@ python unconditional_sample.py -model_path=path/to/model/checkpoints/uncondition
 
 or you can add primer by using `primer_path` parameter:
 ```bash
-python unconditional_sample.py -model_path=path/to/model/checkpoints/unconditional_model_16.ckpt -output_dir=/tmp -decode_length=1024 -primer_path=path/to/primer_mid -num_samples=1
+python unconditional_sample.py -model_path=magenta-music_transformer-folder/checkpoints/unconditional_model_16.ckpt -output_dir=results/ -decode_length=1024 -primer_path=magenta-music_transformer-folder/primers/goldberg17.mid -num_samples=1
 ```
 
 ### Conditional Transformer:
 Generating music conditioned on midi file by typing:
 ```bash
-python melody_sample.py -model_path=path/to/model/checkpoints/melody_conditioned_model_16.ckpt -output_dir=/tmp -decode_length=1024 -melody_path=path/to/melody_midi -num_samples=1
+python3 melody_sample.py -model_path=magenta-music_transformer-folder/checkpoints/melody_conditioned_model_16.ckpt -output_dir=results/ -decode_length=1024 -melody_path=data/goldberg17.mid -num_samples=1
 ```
 
 ### Music Generation Automation:
