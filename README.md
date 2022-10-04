@@ -22,7 +22,7 @@ SDK please follow this [installation guide](https://cloud.google.com/sdk/docs/do
 ## How to use
 Download Music Transformer pre-trained model with Google Cloud SDK:
 ```
-gsutil -q -m cp -r gs://magentadata/models/music_transformer/checkpoints/* <destination folder>
+gsutil -q -m cp -r 'gs://magentadata/models/music_transformer/checkpoints/*' <destination folder>
 ```
 
 ### Unconditional Transformer:
