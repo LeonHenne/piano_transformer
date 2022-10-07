@@ -1,3 +1,7 @@
 model/*
 tmp/*
 magenta-music_transformer-folder
+.DS_Store
+results/.DS_Store
+results/midi/.DS_Store
+results/wave/.DS_Store
